@@ -9,24 +9,28 @@ const options = {
 
 (async () => {
 	try {
-	  const response  = await fetch(url, options);
-	  let result = await response.text();
-	  console.log(result);
-	  for(let i = 0; i<7 ; i++){
-		var finalresult = result[i];
-		console.log(finalresult);
-	  }
-	   console.log(result[6]);
-	   co.innerHTML=result[26,32];
-	   console.log(co);
-	   no2.innerHTML =result.NO2;
-	   o3.innerHTML  =result.O3;
-	   so2.innerHTML =result.SO2;
-	   pm10.innerHTML =result.PM10;
+		const response = await fetch(url, options);
+		let result = await response.json();
+		let arr = [];
+		for (var key in result) {
+			var conc = result[key];
+			console.log(conc);
 
-
+			for(var con in conc){
+				arr.push(conc[con]);
+			}
+			
+		}
+		console.log(arr);
+		co.innerHTML = arr[0];
+		no2.innerHTML = arr[2];
+		o3.innerHTML = arr[4];
+		so2.innerHTML = arr[6];
+		pm25.innerHTML = arr[8];
+		pm10.innerHTML = arr[10];
+		
 	}
 	catch (error) {
-	  console.error(error);
+		console.error(error);
 	}
-  })();
+})();
