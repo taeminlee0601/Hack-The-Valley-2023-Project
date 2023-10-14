@@ -1,4 +1,6 @@
-const url = 'https://air-quality-by-api-ninjas.p.rapidapi.com/v1/airquality?city=Toronto';
+
+function getAirQuality(city){
+	const url = 'https://air-quality-by-api-ninjas.p.rapidapi.com/v1/airquality?city=${city}';
 const options = {
 	method: 'GET',
 	headers: {
@@ -34,3 +36,13 @@ const options = {
 		console.error(error);
 	}
 })();
+}
+
+submit1.addEventListener("click", (e) => {
+	e.preventDefault();
+	city = city1.value;
+	name1.innerHTML = city;
+	getAirQuality(city);
+	
+
+});
