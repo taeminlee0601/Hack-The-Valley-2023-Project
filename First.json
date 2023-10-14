@@ -1,20 +1,32 @@
-{
-   status: "ok",
-   data: {
-      aqi: 70,
-      time: {
-         s: "2023-10-14 09:00:00"
-      },
-      city: {
-         name: "Shanghai",
-         url: "http://aqicn.org/city/shanghai/",
-         geo: [
-            "31.2047372",
-            "121.4489017"
-         ]
-      },
-      iaqi: {
-         pm25: "..."
-      }
-   }
-}
+const url = 'https://air-quality-by-api-ninjas.p.rapidapi.com/v1/airquality?city=Toronto';
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '1aea737716msh24751055a31e096p162f0ajsneb172df97232',
+		'X-RapidAPI-Host': 'air-quality-by-api-ninjas.p.rapidapi.com'
+	}
+};
+
+(async () => {
+	try {
+	  const response  = await fetch(url, options);
+	  let result = await response.text();
+	  console.log(result);
+	  for(let i = 0; i<7 ; i++){
+		var finalresult = result[i];
+		console.log(finalresult);
+	  }
+	   console.log(result[6]);
+	   co.innerHTML=result[26,32];
+	   console.log(co);
+	   no2.innerHTML =result.NO2;
+	   o3.innerHTML  =result.O3;
+	   so2.innerHTML =result.SO2;
+	   pm10.innerHTML =result.PM10;
+
+
+	}
+	catch (error) {
+	  console.error(error);
+	}
+  })();
