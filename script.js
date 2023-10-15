@@ -3,7 +3,7 @@ function getAirQuality(city) {
 	const options = {
 	  method: "GET",
 	  headers: {
-		"X-RapidAPI-Key": "1aea737716msh24751055a31e096p162f0ajsneb172df97232",
+		"X-RapidAPI-Key": "4141fa634emsh91338397febc5b7p12ab65jsn58b2ed9949dc",
 		"X-RapidAPI-Host": "air-quality-by-api-ninjas.p.rapidapi.com",
 	  },
 	};
