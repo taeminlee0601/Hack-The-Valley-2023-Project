@@ -17,6 +17,7 @@
   <nav class="navbar navbar-expand-lg bg-body-dark" style="background-color: #7ab0d6;">
     <div class="container-fluid">
       <!--Title in Top Left-->
+      <a class="navbar-brand" href="#">Air Quality Indexing</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -54,12 +55,12 @@
               <h4 class="my-0 fw-normal">Carbon Monoxide (CO)</h4>
             </div>
             <div class="card-body">
-              <!--Displaying CO Information in ppb (parts per billion)-->
+              <!--Displaying CO Information in ppm (parts per million)-->
               <ul class="list-unstyled mt-3 mb-1">
                 <li>Concentration of CO is <span id=""></span> </li>
               </ul>
               <h1 class="card-title pricing-card-title"><span id="co"></span><small
-                  class="text-body-secondary fw-light"> ppb</small></h1>
+                  class="text-body-secondary fw-light"> ppm</small></h1>
             </div>
           </div>
 
@@ -70,12 +71,12 @@
           <div class="card mb-4 rounded-3 shadow-sm">
             <!--Title of Box-->
             <div class="card-header py-3">
-              <h4 class="my-0 fw-normal">Nitrogen Dioxide (NO2)</h4>
+              <h4 class="my-0 fw-normal">Nitrogen Dioxide (NO<sub>2</sub>)</h4>
             </div>
             <div class="card-body">
               <!--Displaying NO2 Information in ppb (parts per billion)-->
               <ul class="list-unstyled mt-3 mb-1">
-                <li>Concentration of NO2 is <span id=""></span> </li>
+                <li>Concentration of NO<sub>2</sub> is <span id=""></span> </li>
               </ul>
               <h1 class="card-title pricing-card-title"><span id="no2"></span><small
                   class="text-body-secondary fw-light"> ppb</small></h1>
@@ -86,16 +87,17 @@
         <div class="col">
           <!--Box Displaying Information of Ozone (O3)-->
           <div class="card mb-4 rounded-3 shadow-sm">
+            <!--Title of Box-->
             <div class="card-header py-3">
-              <h4 class="my-0 fw-normal">Ozone (O3)</h4>
+              <h4 class="my-0 fw-normal">Ozone (O<sub>3</sub>)</h4>
             </div>
             <div class="card-body">
-              <!--Displaying O3 Information in ppb (parts per billion)-->
+              <!--Displaying O3 Information in Dobson-->
               <ul class="list-unstyled mt-3 mb-1">
-                <li>Concentration of O3 is <span id=""></span> </li>
+                <li>Concentration of O<sub>3</sub> is <span id=""></span> </li>
               </ul>
               <h1 class="card-title pricing-card-title"><span id="o3"></span><small
-                  class="text-body-secondary fw-light"> ppb</small></h1>
+                  class="text-body-secondary fw-light"> Dobson</small></h1>
             </div>
           </div>
 
@@ -103,48 +105,55 @@
       </div>
       <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
         <div class="col">
+          <!--Box Displaying Information of Sulphur Dioxide (SO2)-->
           <div class="card mb-4 rounded-3 shadow-sm">
+            <!--Title of Box-->
             <div class="card-header py-3">
-              <h4 class="my-0 fw-normal">Sulphur Dioxide (SO2)</h4>
+              <h4 class="my-0 fw-normal">Sulphur Dioxide (SO<sub>2</sub>)</h4>
             </div>
             <div class="card-body">
-              <h1 class="card-title pricing-card-title"><span id="so2"></span><small
-                  class="text-body-secondary fw-light"> ppb</small></h1>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>Concentration of SO2 is <span id=""></span> </li>
+              <!--Displaying SO2 Information in ppm (parts per million)-->
+              <ul class="list-unstyled mt-3 mb-1">
+                <li>Concentration of SO<sub>2</sub> is <span id=""></span> </li>
               </ul>
-              
+              <h1 class="card-title pricing-card-title"><span id="so2"></span><small
+                  class="text-body-secondary fw-light"> ppm</small></h1>
             </div>
           </div>
+
         </div>
         <div class="col">
+          <!--Box Displaying Information of PM2.5-->
           <div class="card mb-4 rounded-3 shadow-sm">
+            <!--Title of Box-->
             <div class="card-header py-3">
               <h4 class="my-0 fw-normal">PM2.5</h4>
             </div>
             <div class="card-body">
-              <h1 class="card-title pricing-card-title"><span id="pm25"></span><small
-                  class="text-body-secondary fw-light">ppb</small></h1>
-              <ul class="list-unstyled mt-3 mb-4">
-                  <li>Concentration of PM2.5 is <span id=""></span> </li>
-
+              <!--Displaying PM2.5 Information in μg/m3 (micrograms per cubic meter)-->
+              <ul class="list-unstyled mt-3 mb-1">
+                <li>Concentration of PM2.5 is <span id=""></span> </li>
               </ul>
-              
+              <h1 class="card-title pricing-card-title"><span id="pm25"></span><small
+                  class="text-body-secondary fw-light"> μg/m<sup>3</sup></small></h1>
             </div>
           </div>
+
         </div>
         <div class="col">
+          <!--Box Displaying Information of PM10-->
           <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3">
+              <!--Title of Box-->
               <h4 class="my-0 fw-normal">PM10</h4>
             </div>
             <div class="card-body">
-              <h1 class="card-title pricing-card-title"><span id="pm10"></span><small
-                  class="text-body-secondary fw-light"> ppb</small></h1>
-              <ul class="list-unstyled mt-3 mb-4">
+              <!--Displaying PM10 Information in mg/m3 (miligrams per cubic meter)-->
+              <ul class="list-unstyled mt-3 mb-1">
                 <li>Concentration of PM10 is <span id=""></span> </li>
               </ul>
-              
+              <h1 class="card-title pricing-card-title"><span id="pm10"></span><small
+                  class="text-body-secondary fw-light"> mg/m<sup>3</sup></small></h1>
             </div>
           </div>
         </div>
