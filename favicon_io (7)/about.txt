@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Kameron
+- Font Author: Copyright 2011 The Kameron Project Authors (https://github.com/googlefonts/kameronFont)
+- Font Source: http://fonts.gstatic.com/s/kameron/v16/vm8pdR7vXErQxuznqrUS3z1Uw3nq4Ne3cbcbvZPxCDLR.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
