@@ -27,7 +27,10 @@
         <!--If clicked, it will redirect to home page (Toronto Air Quality Info)-->
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Concentration Levels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="airQualityIndex.html">Air Quality Index (AQI)</a>
           </li>
         </ul>
         <!--Search Bar and Search Button on Navigation Bar-->
@@ -44,7 +47,7 @@
     <main>
 
       <!--Title-->
-      <h1 class="text-center my-4">Air Quality Index of  <span id="name1"></span></h1>
+      <h1 class="text-center my-4">Concentration of Pollutants in <span id="name1"></span></h1>
       <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
         <div class="col">
 
@@ -179,18 +182,6 @@
             </thead>
             <tbody>
               <tr>
-                <!--Information of New York-->
-                <td class="text-center"><strong> New York</strong></td>
-                <td id="New YorkCO">1</td>
-                <td id="New YorkNO2">1</td>
-                <td id="New YorkO3">1</td>
-                <td id="New YorkSO2">1</td>
-                <td id="New YorkPM25">1</td>
-                <td id="New YorkPM10">1</td>
-                
-
-              </tr>
-              <tr>
                 <!--Information of Toronto-->
                 <td class="text-center"><strong>Toronto</strong></td>
                 <td id="TorontoCO">1</td>
@@ -200,6 +191,18 @@
                 <td id="TorontoPM25">1</td>
                 <td id="TorontoPM10">1</td>
 
+
+              </tr>
+              <tr>
+                <!--Information of New York-->
+                <td class="text-center"><strong> New York</strong></td>
+                <td id="New YorkCO">1</td>
+                <td id="New YorkNO2">1</td>
+                <td id="New YorkO3">1</td>
+                <td id="New YorkSO2">1</td>
+                <td id="New YorkPM25">1</td>
+                <td id="New YorkPM10">1</td>
+                
 
               </tr>
             </tbody>
@@ -240,7 +243,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+  <script src="script_concentration.js"></script>
 </body>
 
 </html>
