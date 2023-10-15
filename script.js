@@ -22,13 +22,14 @@ function getAirQuality(city) {
 		  }
 		}
 
-		city_array = city.split(' ')
-		for (index in city_array){
-			console.log(city_array[index])
+		new_city = ''
+		city_array = city.split(' ');
+		for (city in city_array){
+			new_city = new_city.concat(city_array[city][0].toUpperCase(), city_array[city].slice(1, ), ' ')
 		}
 		
 
-
+	    name1.innerHTML = new_city;
 		co.innerHTML = arr[0];
 		no2.innerHTML = arr[2];
 		o3.innerHTML = arr[4];
@@ -63,7 +64,15 @@ function getAirQuality(city) {
 			arr.push(conc[con]);
 		  }
 		}
-		name1.innerHTML = city;
+
+		new_city = ''
+		city_array = city.split(' ');
+		for (city in city_array){
+			new_city = new_city.concat(city_array[city][0].toUpperCase(), city_array[city].slice(1, ), ' ')
+		}
+		
+		console.log(new_city)
+		name1.innerHTML = new_city;
 		document.getElementById(city + "CO").innerHTML = arr[0];
 		document.getElementById(city + "NO2").innerHTML = arr[2];
 		document.getElementById(city + "O3").innerHTML = arr[4];
