@@ -21,7 +21,14 @@ function getAirQuality(city) {
 			arr.push(conc[con]);
 		  }
 		}
-		name1.innerHTML = city;
+
+		city_array = city.split(' ')
+		for (index in city_array){
+			console.log(city_array[index])
+		}
+		
+
+
 		co.innerHTML = arr[0];
 		no2.innerHTML = arr[2];
 		o3.innerHTML = arr[4];
