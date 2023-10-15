@@ -21,7 +21,7 @@ function getAirQuality(city) {
 			arr.push(conc[con]);
 		  }
 		}
-		name1.innerHTML = 
+		name1.innerHTML = city;
 		co.innerHTML = arr[0];
 		no2.innerHTML = arr[2];
 		o3.innerHTML = arr[4];
@@ -56,6 +56,7 @@ function getAirQuality(city) {
 			arr.push(conc[con]);
 		  }
 		}
+		name1.innerHTML = city;
 		document.getElementById(city + "CO").innerHTML = arr[0];
 		document.getElementById(city + "NO2").innerHTML = arr[2];
 		document.getElementById(city + "O3").innerHTML = arr[4];
