@@ -35,7 +35,7 @@ function displayConcentrationLevel(city) {
 			// Capitalize the first letter of each word in the city name
 			new_city = ''
 			city_array = city.split(' ');
-			for (city in city_array){
+			for (city in city_array) {
 				new_city = new_city.concat(city_array[city][0].toUpperCase(), city_array[city].slice(1, ), ' ')
 			}
 			
