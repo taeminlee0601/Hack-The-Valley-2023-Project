@@ -65,14 +65,7 @@ function getAirQuality(city) {
 		  }
 		}
 
-		new_city = ''
-		city_array = city.split(' ');
-		for (city in city_array){
-			new_city = new_city.concat(city_array[city][0].toUpperCase(), city_array[city].slice(1, ), ' ')
-		}
-		
-		console.log(new_city)
-		name1.innerHTML = new_city;
+		name1.innerHTML = city;
 		document.getElementById(city + "CO").innerHTML = arr[0];
 		document.getElementById(city + "NO2").innerHTML = arr[2];
 		document.getElementById(city + "O3").innerHTML = arr[4];
